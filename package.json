@@ -1,0 +1,51 @@
+{
+  "name": "@jakoblierman/prettier-config",
+  "version": "0.0.0",
+  "description": "Personal Prettier configuration",
+  "author": {
+    "name": "Jakob Lierman",
+    "email": "jakob.lierman@gmail.com",
+    "url": "https://jakoblierman.be"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakobLierman/prettier-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JakobLierman/prettier-config/issues"
+  },
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "engines": {
+    "node": ">=v20"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "release": "release-it",
+    "prepare": "husky install",
+    "test": "echo 'No tests yet'"
+  },
+  "peerDependencies": {
+    "prettier": "^3.2.4"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@jakoblierman/commitlint-config": "^1.0.0",
+    "@jakoblierman/eslint-config": "^0.0.1",
+    "@release-it/conventional-changelog": "^8.0.1",
+    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
+    "lint-staged": "latest",
+    "release-it": "^17.0.1"
+  },
+  "license": "MIT"
+}

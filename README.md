@@ -1,0 +1,87 @@
+# Custom Prettier Configuration
+
+[![Prettier Config](https://img.shields.io/badge/prettier-config-blue.svg)](https://www.npmjs.com/package/@jakoblierman/prettier-config)
+
+This package provides a custom [Prettier](https://prettier.io/) configuration to maintain consistent code formatting across your projects.
+
+## Installation
+
+Install the package using your package manager of choice:
+
+```bash
+npm install --save-dev prettier @jakoblierman/prettier-config
+```
+
+```bash
+yarn add --dev prettier @jakoblierman/prettier-config
+```
+
+```bash
+pnpm add --save-dev prettier @jakoblierman/prettier-config
+```
+
+## Usage
+
+Create a `.prettierrc` file in your project's root and extend this configuration:
+
+```json
+"@jakoblierman/prettier-config"
+```
+
+Alternatively, add the following to your `package.json`:
+
+```json
+{
+  "prettier": "@jakoblierman/prettier-config"
+}
+```
+
+Now, your project will use this configuration for Prettier formatting.
+
+For more information, see the [Prettier configuration docs](https://prettier.io/docs/en/configuration.html#sharing-configurations).
+
+### Add NPM scripts (optional)
+
+Add the following scripts to your `package.json`:
+
+```json
+{
+  "scripts": {
+    "format": "prettier --check .",
+    "format:fix": "prettier --write ."
+  }
+}
+```
+
+### Add commit hook (optional)
+
+To automatically format your code before committing, install the [Husky](https://typicode.github.io/husky/) package using [this guide](https://typicode.github.io/husky/getting-started.html).
+
+Install the [lint-staged](https://github.com/lint-staged/lint-staged) package.
+This package runs scripts on files that are staged in Git.
+
+Extend your `.lintstagedrc` file with the following:
+
+```json
+{
+  "*": ["prettier --write"]
+}
+```
+
+Run lint-staged on every commit by configuring a Husky hook:
+
+```bash
+npx husky add .husky/pre-commit "npx lint-staged"
+```
+
+Now, your code will be formatted before every commit.
+
+## Rules
+
+This configuration includes settings for:
+
+- `singleQuote`: Single quotes instead of double quotes.
+
+The other settings are left to Prettier's defaults.
+
+Feel free to customize the configuration to match your coding style and project requirements.

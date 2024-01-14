@@ -1,0 +1,4 @@
+.husky/
+build/
+dist/
+coverage/
