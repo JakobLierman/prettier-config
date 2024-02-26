@@ -2,50 +2,55 @@
   "name": "@jakoblierman/prettier-config",
   "version": "0.0.1",
   "description": "Personal Prettier configuration",
-  "author": {
-    "name": "Jakob Lierman",
-    "email": "jakob.lierman@gmail.com",
-    "url": "https://jakoblierman.be"
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "bugs": {
+    "url": "https://github.com/JakobLierman/prettier-config/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JakobLierman/prettier-config.git"
   },
-  "bugs": {
-    "url": "https://github.com/JakobLierman/prettier-config/issues"
+  "license": "MIT",
+  "author": {
+    "name": "Jakob Lierman",
+    "email": "jakob.lierman@gmail.com",
+    "url": "https://jakoblierman.be"
   },
-  "keywords": [
-    "prettier",
-    "prettier-config"
-  ],
-  "engines": {
-    "node": ">=v20"
-  },
+  "main": "index.js",
   "files": [
     "index.js"
   ],
-  "main": "index.js",
   "scripts": {
     "format": "prettier --check .",
     "format:fix": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "release": "release-it",
     "prepare": "husky install",
+    "release": "release-it",
     "test": "echo 'No tests yet'"
   },
-  "peerDependencies": {
-    "prettier": "^3.2.4"
-  },
   "devDependencies": {
-    "@commitlint/cli": "^18.4.4",
+    "@commitlint/cli": "^18.6.1",
     "@jakoblierman/commitlint-config": "^1.0.0",
-    "@jakoblierman/eslint-config": "^0.0.1",
+    "@jakoblierman/eslint-config": "^0.0.2",
     "@release-it/conventional-changelog": "^8.0.1",
-    "eslint": "^8.56.0",
-    "husky": "^8.0.3",
+    "husky": "^9.0.11",
     "lint-staged": "latest",
-    "release-it": "^17.0.1"
+    "release-it": "^17.1.1"
   },
-  "license": "MIT"
+  "peerDependencies": {
+    "prettier": "^3.2.5",
+    "prettier-plugin-embed": "^0.4.14",
+    "prettier-plugin-packagejson": "^2.4.12",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prettier-plugin-properties": "^0.3.0",
+    "prettier-plugin-sh": "^0.14.0",
+    "prettier-plugin-sql": "^0.18.0"
+  },
+  "engines": {
+    "node": ">=v20"
+  }
 }
