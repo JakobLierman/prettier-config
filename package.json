@@ -28,9 +28,17 @@
     "format:fix": "prettier --write .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "prepare": "husky install",
+    "prepare": "husky",
     "release": "release-it",
     "test": "echo 'No tests yet'"
+  },
+  "dependencies": {
+    "prettier-plugin-embed": "^0.4.14",
+    "prettier-plugin-packagejson": "^2.4.12",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prettier-plugin-properties": "^0.3.0",
+    "prettier-plugin-sh": "^0.14.0",
+    "prettier-plugin-sql": "^0.18.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^18.6.1",
@@ -42,13 +50,7 @@
     "release-it": "^17.1.1"
   },
   "peerDependencies": {
-    "prettier": "^3.2.5",
-    "prettier-plugin-embed": "^0.4.14",
-    "prettier-plugin-packagejson": "^2.4.12",
-    "prettier-plugin-prisma": "^5.0.0",
-    "prettier-plugin-properties": "^0.3.0",
-    "prettier-plugin-sh": "^0.14.0",
-    "prettier-plugin-sql": "^0.18.0"
+    "prettier": "^3.2.5"
   },
   "engines": {
     "node": ">=v20"

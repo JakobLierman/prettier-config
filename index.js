@@ -1,11 +1,5 @@
-/** @type {import('prettier-plugin-embed').PrettierPluginEmbedOptions} */
-const prettierPluginEmbedConfig = {
-  embeddedSqlIdentifiers: ['sql'],
-};
-
 /** @type {import('prettier-plugin-sql').SqlBaseOptions} */
 const prettierPluginSqlConfig = {
-  language: 'sql',
   keywordCase: 'upper',
 };
 
@@ -20,6 +14,5 @@ module.exports = {
     'prettier-plugin-embed',
     'prettier-plugin-sql',
   ],
-  ...prettierPluginEmbedConfig,
   ...prettierPluginSqlConfig,
 };
