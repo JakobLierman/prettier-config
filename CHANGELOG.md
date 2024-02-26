@@ -1,3 +1,9 @@
+## [0.1.1](https://github.com/JakobLierman/prettier-config/compare/v0.1.0...v0.1.1) (2024-02-26)
+
+### Bug Fixes
+
+- include config plugin dependencies ([9229b33](https://github.com/JakobLierman/prettier-config/commit/9229b33f55336dfcce696feb2585055b5ebde40c))
+
 ## [0.1.0](https://github.com/JakobLierman/prettier-config/compare/v0.0.1...v0.1.0) (2024-02-26)
 
 ### Features
