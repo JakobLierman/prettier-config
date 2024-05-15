@@ -6,8 +6,9 @@ on:
       - main
 
 permissions:
-  contents: write
-  packages: write
+  contents: write # Commit release and tag changes
+  packages: write # Publish packages to GitHub Package Registry
+  pull-requests: write # Optional, allows for commenting on PRs
 
 jobs:
   release:
