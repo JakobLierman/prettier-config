@@ -78,10 +78,19 @@ Now, your code will be formatted before every commit.
 
 ## Rules
 
-This configuration includes settings for:
-
-- `singleQuote`: Single quotes instead of double quotes.
-
-The other settings are left to Prettier's defaults.
+This configuration extends the Vercel Prettier configuration.
+You can learn more about Vercel's engineering style guides on their GitHub repository: [vercel/style-guide](https://github.com/vercel/style-guide).
 
 Feel free to customize the configuration to match your coding style and project requirements.
+
+## Plugins
+
+This configuration includes several plugins by default:
+
+- prettier-plugin-tailwindcss
+- prettier-plugin-sh
+- prettier-plugin-packagejson
+- prettier-plugin-properties
+- prettier-plugin-prisma
+- prettier-plugin-embed
+- prettier-plugin-sql
