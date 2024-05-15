@@ -7,6 +7,7 @@ const prettierPluginSqlConfig = {
 module.exports = {
   singleQuote: true,
   plugins: [
+    'prettier-plugin-tailwindcss',
     'prettier-plugin-sh',
     'prettier-plugin-packagejson',
     'prettier-plugin-properties',
@@ -14,5 +15,6 @@ module.exports = {
     'prettier-plugin-embed',
     'prettier-plugin-sql',
   ],
+  tailwindFunctions: ['clsx', 'cn', 'classnames', 'twMerge', 'twJoin'],
   ...prettierPluginSqlConfig,
 };
