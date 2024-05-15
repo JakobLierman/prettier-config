@@ -1,3 +1,10 @@
+## [0.2.0](https://github.com/JakobLierman/prettier-config/compare/v0.1.1...v0.2.0) (2024-05-15)
+
+### Features
+
+- add tailwindcss plugin ([25686ac](https://github.com/JakobLierman/prettier-config/commit/25686ac7ad27c8cf8a65f44632204a1529f98636))
+- extend vercel style guide ([25d29c3](https://github.com/JakobLierman/prettier-config/commit/25d29c32aa38823fb54ac7d829c5fb2ba29f0367))
+
 ## [0.1.1](https://github.com/JakobLierman/prettier-config/compare/v0.1.0...v0.1.1) (2024-02-26)
 
 ### Bug Fixes
