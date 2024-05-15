@@ -36,6 +36,7 @@
     "test": "echo 'No tests yet'"
   },
   "dependencies": {
+    "@vercel/style-guide": "^6.0.0",
     "prettier-plugin-embed": "^0.4.15",
     "prettier-plugin-packagejson": "^2.5.0",
     "prettier-plugin-prisma": "^5.0.0",
