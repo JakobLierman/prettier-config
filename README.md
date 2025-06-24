@@ -47,8 +47,8 @@ Add the following scripts to your `package.json`:
 ```json
 {
   "scripts": {
-    "format": "prettier --check .",
-    "format:fix": "prettier --write ."
+    "format": "prettier --check --ignore-unknown .",
+    "format:fix": "prettier --write --ignore-unknown ."
   }
 }
 ```
