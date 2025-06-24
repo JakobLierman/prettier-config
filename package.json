@@ -27,8 +27,8 @@
     "index.js"
   ],
   "scripts": {
-    "format": "prettier --check .",
-    "format:fix": "prettier --write .",
+    "format": "prettier --check --ignore-unknown .",
+    "format:fix": "prettier --write --ignore-unknown .",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "husky",
@@ -37,25 +37,26 @@
   },
   "dependencies": {
     "@vercel/style-guide": "^6.0.0",
-    "prettier-plugin-embed": "^0.4.15",
-    "prettier-plugin-packagejson": "^2.5.0",
+    "prettier-plugin-embed": "^0.5.0",
+    "prettier-plugin-packagejson": "^2.5.15",
     "prettier-plugin-prisma": "^5.0.0",
     "prettier-plugin-properties": "^0.3.0",
-    "prettier-plugin-sh": "^0.14.0",
-    "prettier-plugin-sql": "^0.18.0",
-    "prettier-plugin-tailwindcss": "^0.5.14"
+    "prettier-plugin-sh": "^0.17.4",
+    "prettier-plugin-sql": "^0.19.1",
+    "prettier-plugin-tailwindcss": "^0.6.13"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
+    "@commitlint/cli": "^19.8.1",
     "@jakoblierman/commitlint-config": "^2.0.0",
-    "@jakoblierman/eslint-config": "^0.0.2",
-    "@release-it/conventional-changelog": "^8.0.1",
-    "husky": "^9.0.11",
+    "@jakoblierman/eslint-config": "^0.12.0",
+    "@release-it/conventional-changelog": "^10.0.1",
+    "eslint": "^8.57.0",
+    "husky": "^9.1.7",
     "lint-staged": "latest",
-    "release-it": "^17.2.1"
+    "release-it": "^19.0.3"
   },
   "peerDependencies": {
-    "prettier": "^3.2.5"
+    "prettier": "^3.6.0"
   },
   "engines": {
     "node": ">=v20"
