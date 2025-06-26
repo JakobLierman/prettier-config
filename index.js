@@ -9,14 +9,15 @@ const prettierPluginSqlConfig = {
 module.exports = {
   ...vercelConfig,
   plugins: [
-    'prettier-plugin-tailwindcss',
     'prettier-plugin-sh',
     'prettier-plugin-packagejson',
     'prettier-plugin-properties',
     'prettier-plugin-prisma',
     'prettier-plugin-embed',
     'prettier-plugin-sql',
+    'prettier-plugin-tailwindcss', // Must come last
   ],
+  pluginSearchDirs: false,
   tailwindFunctions: ['clsx', 'cn', 'classnames', 'twMerge', 'twJoin'],
   ...prettierPluginSqlConfig,
 };
