@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>0.2.3 (2025-06-26)</small>
+
+- fix: tailwind ([4b8fc7d](https://github.com/JakobLierman/prettier-config/commit/4b8fc7d))
+
 ## <small>0.2.2 (2025-06-26)</small>
 
 - chore: upgrade packages ([aecf774](https://github.com/JakobLierman/prettier-config/commit/aecf774))
