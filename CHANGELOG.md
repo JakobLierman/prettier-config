@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>0.2.2 (2025-06-26)</small>
+
+- chore: upgrade packages ([aecf774](https://github.com/JakobLierman/prettier-config/commit/aecf774))
+
 ## <small>0.2.1 (2025-06-24)</small>
 
 - chore: upgrade eslint setup ([670ba12](https://github.com/JakobLierman/prettier-config/commit/670ba12))
