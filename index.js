@@ -17,7 +17,6 @@ module.exports = {
     'prettier-plugin-sql',
     'prettier-plugin-tailwindcss', // Must come last
   ],
-  pluginSearchDirs: false,
   tailwindFunctions: ['clsx', 'cn', 'classnames', 'twMerge', 'twJoin'],
   ...prettierPluginSqlConfig,
 };
