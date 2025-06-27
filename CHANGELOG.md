@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>0.2.4 (2025-06-27)</small>
+
+- fix: remove unknown setting ([a6b6072](https://github.com/JakobLierman/prettier-config/commit/a6b6072))
+
 ## <small>0.2.3 (2025-06-26)</small>
 
 - fix: tailwind ([4b8fc7d](https://github.com/JakobLierman/prettier-config/commit/4b8fc7d))
