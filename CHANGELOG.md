@@ -1,5 +1,9 @@
 # Changelog
 
+## <small>0.2.5 (2025-09-04)</small>
+
+- chore: upgrade packages ([5b38bb3](https://github.com/JakobLierman/prettier-config/commit/5b38bb3))
+
 ## <small>0.2.4 (2025-06-27)</small>
 
 - fix: remove unknown setting ([a6b6072](https://github.com/JakobLierman/prettier-config/commit/a6b6072))
